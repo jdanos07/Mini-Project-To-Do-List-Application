@@ -5,7 +5,7 @@ print('\nWelcome to the To-Do List Application!')
 # Menu2 is printing said list itemized
 # Menu3 is moving tasks from To-Do list to Completed and removing them from the first list
 # Menu4 is deleting a task from To-Do list
-# Menu5 is exitting app
+# Menu5 is exiting app
 # BONUS: Prioritize tasks, add due dates, color-coding tasks based on status.
 
 
@@ -42,7 +42,7 @@ def task_manager():
                 delete()
             elif selection == '5':
                 quit()
-        break
+                break
             
 
 def adding_task():            
@@ -52,7 +52,7 @@ def adding_task():
                 addition = input(f'Please input task to add to your To-Do list: ')
                 todo_list.append(addition)
             elif add_task =='no':
-                task_manager()        
+                break    
             else:
                 print('Try Again')
 
@@ -85,7 +85,7 @@ def delete():
     for count, task in enumerate(todo_list, 1):
             print(f'{count}. {task}') # List each task itemized
     try: #need to make the following input relate to the slice of the list
-        delete_task = int(input('Which task no longer requires compeltion?\n Input the appropriate line number: '))
+        delete_task = (int(input('Which task no longer requires compeltion?\n Input the appropriate line number: '))-1)
         del todo_list[delete_task]
     except ValueError: #Handle unexpected inputs
         print('This task does not exist in your "To-Do" list\n Please be sure to use the task line number for your selection.')
@@ -97,7 +97,7 @@ def delete():
             print(f'{count}. {task}') # List each task itemized
 
 def quit():
-    quit = input('Are you sure you want to quit? Yes/No').lower()
+    quit = input('Are you sure you want to quit? Yes/No? ').lower()
     if quit == 'yes':
         print('Thank you for using the "To-Do List"! \n Wishing you a productive day!')
         print('\nHere are your current "To-Do" tasks:')
@@ -106,9 +106,10 @@ def quit():
         print('\nHere are your current "Completed" tasks:')
         for count, task in enumerate(completed_list, 1):
             print(f'{count}. {task}')
-            
-    
+    else:
+        print('Return to main menu.')        
     
 
 task_manager()
 
+why
