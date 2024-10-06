@@ -111,5 +111,3 @@ def quit():
     
 
 task_manager()
-
-why
