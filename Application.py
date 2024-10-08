@@ -1,4 +1,4 @@
-print('\nWelcome to the To-Do List Application!')
+
 
 #The intent of this application is to walk users through creating on itemized list of tasks that can be modified based on completion and necessity.
 # Menu1 is adding tasks to a list through input
@@ -8,24 +8,12 @@ print('\nWelcome to the To-Do List Application!')
 # Menu5 is exiting app
 # BONUS: Prioritize tasks, add due dates, color-coding tasks based on status.
 
-
-# def list_personalizing(): #Name list and possibly add future possibility of multiple lists
-#     personalize_list = input('Would you like to name your list? Yes/No').lower
-#     for yes in personalize_list:
-#       yes = 'yes'
-#       personalized_list = input('Input To-Do list name: ')
-#       for given_name in personalize_list:
-#         given_name = personalized_list
-#         given_name = []
-#     else:
-#        pass
-
-# print(list_personalizing())
 todo_list = []
 completed_list = []
 
 
 def task_manager():
+    print('\nWelcome to the To-Do List Application!')
     while True:
         try:
             selection = input(' \nMenu:\n\n1. Add a Task\n2. View Task\n3. Mark a task as complete\n4. Delete a task\n5. Quit\n\nPlease select a menu option: ')
