@@ -1,5 +1,7 @@
 Welcome to the "To-Do List" Application.
 
+Intiat Application.py
+
 Application usage is as follows: 
 After intializing the app users will be shown a menu. Inputing the number of the menu item will open the associated function.
 (1) Will ask users if they would like to add a task to their list. A simple yes or no is all that is required. If yes is input, then the function will ask what the task to be added to the list is. If no is input, the task adding function will end and return the user to the main menu.
