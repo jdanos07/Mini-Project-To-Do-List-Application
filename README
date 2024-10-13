@@ -1,6 +1,6 @@
 Welcome to the "To-Do List" Application.
 
-Intiat Application.py
+Intiate Application.py
 
 Application usage is as follows: 
 After intializing the app users will be shown a menu. Inputing the number of the menu item will open the associated function.
